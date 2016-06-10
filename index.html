@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products</title>
+  <link rel='stylesheet' href='css/style.css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <section>
+  <h1>Create a new product</h1>
+
+  <form action="" id="search-form">
+    <div class="movies">
+    <p>Product name</p>
+    <input id="product-name" name="product-name" type="text" class="searchbox" placeholder="Product name">
+    <p>Price</p>
+    <input id="product-price" name="product-price" type="text" class="searchbox" placeholder="Price">
+    <p>Product link</p>
+    <input id="product-link" name="product-link" type="text" class="searchbox" placeholder="http://www.google.fi">
+    <p>Currency</p>
+    <input id="product-currency" name="product-currency" type="text" class="searchbox" placeholder="$">
+
+
+    <div class="features">
+      <div class="feature"><a href="">Features</a>
+    </div>
+    <div class="featurenew"><a href="">New feature+</a>
+  </div>
+
+      <p><input type="button" class="button" value="Create" id="button"></p>
+  </form>
+  </div>
+
+</section>
+
+<div class="products">
+  <table id="product-list">
+    <caption>Product list</caption>
+    <colgroup>
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+    </colgroup>
+    <thead>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col">Product name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Product link</th>
+            <th scope="col">Currency</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+</div>
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/app.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+section {
+  padding: 30px;
+  max-width: 400px;
+}
+.searchbox {
+  width: 100%;
+  padding: 10px;
+}
+
+#button {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: crosshair;
+}
+
+.features {
+  display: inline-block;
+}
+
+.feature, .featurenew {
+  padding: 10px;
+  display: inline-block;
+}
+
+.featurenew {
+}
+
+caption {
+  padding: 15px;
+  font-size: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+table, tr, td, thead, tfoot, colgroup, col, caption {
+    margin: 0px;
+    border-spacing: 0px;
+}
+
+table {
+    border: 1px solid #333333;
+}
+
+table thead tr {
+    background-color: orange;
+}
+
+table tbody tr td:last-child, table thead tr th:last-child, table tfoot tr th:last-child {
+    text-align: right;
+}
+
+table tfoot tr th:first-child {
+    text-align: left;
+    background-color: #ffffff;
+    border-right: 1px solid #333333;
+}
+
+table tbody tr td, table tbody tr th, table thead tr th, table thead tr td {
+    border-bottom: 1px solid #333333;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 1px solid #333333;
+}
+
+table tbody tr td:last-child, table tbody tr th:last-child, table thead tr th:last-child {
+    border-right: 0px;
+}
+
+table colgroup col:first-child {
+    background-color: orange;
+}
+
+table thead tr th, table tbody tr td {
+    padding: 4px 7px 2px;
+}
+
+table tbody tr:nth-child(even){
+    background-color: #ececec;
+}
+
+table tbody tr:nth-child(od){
+    background-color: #ffffff;
+}
