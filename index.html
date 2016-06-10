@@ -11,7 +11,7 @@
   <h1>Create a new product</h1>
 
   <form action="" id="search-form">
-    <div class="movies">
+    <div id="products">
     <p>Product name</p>
     <input id="product-name" name="product-name" type="text" class="searchbox" placeholder="Product name">
     <p>Price</p>
@@ -19,25 +19,30 @@
     <p>Product link</p>
     <input id="product-link" name="product-link" type="text" class="searchbox" placeholder="http://www.google.fi">
     <p>Currency</p>
-    <input id="product-currency" name="product-currency" type="text" class="searchbox" placeholder="$">
+    <input id="product-currency" name="product-currency" type="text" class="searchbox" placeholder="$, ¢..">
+    <p><label for="new-task-color">Color:</label>
+
+     <input id="new-task-color" name="new-task-color" type="color"></p>
 
 
-    <div class="features">
+    <!-- <div class="features">
       <div class="feature"><a href="">Features</a>
     </div>
     <div class="featurenew"><a href="">New feature+</a>
+  </div> -->
+
+      <p><input type="submit" class="button" value="Create" id="button"></p> </form>
+
   </div>
 
-      <p><input type="button" class="button" value="Create" id="button"></p>
-  </form>
-  </div>
+    <button class="button add" id="add-new">New feature</button>
 
 </section>
 
 <div class="products">
   <table id="product-list">
-    <caption>Product list</caption>
     <colgroup>
+        <col />
         <col />
         <col />
         <col />
@@ -51,6 +56,7 @@
             <th scope="col">Price</th>
             <th scope="col">Product link</th>
             <th scope="col">Currency</th>
+            <th scope="col">Additional</th>
         </tr>
     </thead>
     <tbody>
@@ -65,3 +71,7 @@
 
 </body>
 </html>
+
+<button class="button" style="margin: 15px">Request data</button>
+
+<div class="json"></div>
