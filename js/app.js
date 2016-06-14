@@ -50,15 +50,15 @@ $(document).on('ready', function() {
         var tbody = $('#product-list > tbody');
 
             if (json.length == 5) {
-              console.log("happydays");
+              console.log("Additional feature doesn't exist");
               tbody.append('<tr><th scope="row" style="background-color:' + this['new-product-color'].value +
-                  '"><input type="checkbox" class="checkbox" /></th><td>' + this['product-name'].value +
+                  '"> </th><td>' + this['product-name'].value +
                   '</td><td>' + this['product-price'].value + '</td><td>' + this['product-link'].value +
                   '</td><td>' + this['product-currency'].value + '</td><td>' + ' ');
             } else if (json[5].value){
-              console.log("false");
+              console.log("Additional feature exists");
               tbody.append('<tr><th scope="row" style="background-color:' + this['new-product-color'].value +
-                  '"><input type="checkbox" class="checkbox" /></th><td>' + this['product-name'].value +
+                  '"> </th><td>' + this['product-name'].value +
                   '</td><td>' + this['product-price'].value + '</td><td>' + this['product-link'].value +
                   '</td><td>' + this['product-currency'].value + '</td><td>' + this['additional-info'].value);
             }
