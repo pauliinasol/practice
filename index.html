@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <title>Products</title>
   <link rel='stylesheet' href='css/style.css'>
+
+  <link rel='stylesheet' href='css/modal.css'>
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <section>
   <h1>Create a new product</h1>
 
-  <form action="" id="search-form">
+  <form action="" id="search-form" enctype='application/json'>
     <div id="products">
     <p>Product name</p>
     <input id="product-name" name="product-name" type="text" class="searchbox" placeholder="Product name">
@@ -20,16 +22,10 @@
     <input id="product-link" name="product-link" type="text" class="searchbox" placeholder="http://www.google.fi">
     <p>Currency</p>
     <input id="product-currency" name="product-currency" type="text" class="searchbox" placeholder="$, ¢..">
-    <p><label for="new-task-color">Color:</label>
+    <p><label for="new-product-color">Color:</label>
 
-     <input id="new-task-color" name="new-task-color" type="color"></p>
+     <input id="new-product-color" name="new-task-color" type="color"></p>
 
-
-    <!-- <div class="features">
-      <div class="feature"><a href="">Features</a>
-    </div>
-    <div class="featurenew"><a href="">New feature+</a>
-  </div> -->
 
       <p><input type="submit" class="button" value="Create" id="button"></p> </form>
 
@@ -59,7 +55,7 @@
             <th scope="col">Additional</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="tablebody">
     </tbody>
 </table>
 </div>
@@ -69,9 +65,32 @@
   <script src="js/app.js"></script>
 
 
+  <button class="button" id="open-modal" style="margin: 15px">JSON of last item</button>
+
+<button class="button" style="margin: 15px">Remove selected</button>
+
+  <div class="json"></div>
+
+    <div id="modal">
+      <!-- Step 5 -->
+       <div class="modal-content">
+         <!-- Step 4 -->
+          <span id="close-modal">x</span>
+        <div class="modal-body">
+
+      </div>
+    </div>
+
 </body>
 </html>
 
-<button class="button" style="margin: 15px">Request data</button>
+<script type="text/javascript">
 
-<div class="json"></div>
+// $.ajax({
+//   dataType: 'json',
+//   url: url,
+//   data: data,
+//   success: success
+// });
+
+</script>
