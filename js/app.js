@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function() {
     $('.button').mouseenter(function() {
         $(this).fadeTo('fast', 0.5);
@@ -17,8 +14,6 @@ $(document).ready(function() {
 
           newInput = $("<div class='newfeature'><p>Additional info <button id='remove'>Remove feature</button> </p> <input name='additional-info' id='additional-info' type='text' class='searchbox' placeholder='Additional info'></div>");
           $('input#product-currency').after(newInput);
-          $('.adding').toggle();
-
           $("#remove").click(function() {
             $(newInput).remove();
           });
@@ -29,9 +24,7 @@ $(document).ready(function() {
 
 
 $("form").submit(function(event) {
-    // console.log($(this).serializeArray());
     json = $(this).serializeArray();
-
     console.log(json);
     event.preventDefault();
 });
@@ -46,18 +39,15 @@ $(document).ready(function() {
 function openModal() {
   $("#modal").toggle();
 }
-
 function closeModal() {
   $("#modal").toggle();
 }
-
 // Handles the JSON modal
 
 $(document).on('ready', function() {
     $('form#search-form').bind('submit', function(event) {
         event.preventDefault();
         var tbody = $('#product-list > tbody');
-
 
             if (json.length == 5) {
               console.log("happydays");
@@ -72,7 +62,6 @@ $(document).on('ready', function() {
                   '</td><td>' + this['product-price'].value + '</td><td>' + this['product-link'].value +
                   '</td><td>' + this['product-currency'].value + '</td><td>' + this['additional-info'].value);
             }
-
     });
 });
 

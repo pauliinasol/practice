@@ -1,4 +1,4 @@
-# Ennakkotehtävä
+# Dynaaminen lomake
 
 Tehtävä sisältää dynaamisen javascript-lomakkeen JSON-tiedoilla. Kun lomake lähetetään, tuotetiedot generoituvat taulukkoon.
 
