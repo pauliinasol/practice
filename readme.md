@@ -20,4 +20,4 @@ Tehtävä löytyy GitHubista:
 https://github.com/pauliinasol/practice.git
 
 ##### Ajankäyttö
-Tehtävään meni noin yksi työpäivä yhteensä.
+Tehtävään meni alle yksi työpäivä.
